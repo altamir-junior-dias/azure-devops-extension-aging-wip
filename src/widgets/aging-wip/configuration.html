@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
+    <script src="vss-init-index.js"></script>
+    <script type="text/javascript">
+        initializeWidgetConfiguration('AgingWIPConfiguration', 'widgets-aging-wip-configuration');
+    </script>
+    <style>
+        .margin-bottom { 
+            margin-bottom: 10px;
+        }
+        input[type=number] {
+            width: 100%;
+            height: 32px;
+            padding: 3px 5px;
+            position: relative;
+            border: 1px solid;
+            border-color: rgba( 234, 234, 234 , 1 );
+            border-color: rgba( var(--palette-neutral-8,234, 234, 234) , 1 );
+        }
+    </style>
+</head>
+<body>
+    <div class="widget-configuration margin-bottom">
+        <div class="single-line-text-input margin-bottom">
+            <label>Title</label>
+            <input id="title" type="text"></input>
+        </div>
+
+        <div class="dropdown margin-bottom">
+            <label>Team</label>
+            <div class="wrapper">
+                <select id="team">
+                </select>
+            </div>
+        </div>
+
+        <div class="dropdown margin-bottom">
+            <label>Backlog</label>
+            <div class="wrapper">
+                <select id="backlog">
+                </select>
+            </div>
+        </div>
+
+        <div class="single-line-text-input margin-bottom">
+            <label>Items created after <i>(blank to not filter)</i></label>
+            <input id="created-after" type="text"></input>
+        </div>
+
+        <div class="single-line-text-input margin-bottom">
+            <label><i>Keep percentiles empty to not show them</i></label>
+        </div>
+
+        <div class="single-line-text-input margin-bottom">
+            <label>Red Percentile</label>
+            <input id="red-percentile" type="number" style="width: 50px;"></input>
+        </div>
+
+        <div class="single-line-text-input margin-bottom">
+            <label>Orange Percentile</label>
+            <input id="orange-percentile" type="number" style="width: 50px;"></input>
+        </div>
+
+        <div class="single-line-text-input margin-bottom">
+            <label>Yellow Percentile</label>
+            <input id="yellow-percentile" type="number" style="width: 50px;"></input>
+        </div>
+
+        <div class="single-line-text-input margin-bottom">
+            <label>Light Green Percentile</label>
+            <input id="light-green-percentile" type="number" style="width: 50px;"></input>
+        </div>
+    </div>
+</body>
+</html>
